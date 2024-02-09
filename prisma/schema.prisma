@@ -14,7 +14,7 @@ model Author {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  firstName String
+  firstName String @unique
   lastName  String
   Book      Book[]
 }
